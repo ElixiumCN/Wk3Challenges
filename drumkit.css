@@ -36,7 +36,7 @@
     border: 3px solid green;
     text-align: center;
 
-  }
+}
 
 .vertical-center-btn {
     margin: 0;
@@ -44,7 +44,7 @@
     /* top: 50%; */
     -ms-transform: translateY(-0%);
     transform: translateY(-0%);
-  }
+}
 
 
 .flexLocationImages {
@@ -152,6 +152,20 @@ input {
     left: 50%;
     transform: translate(-50%, -50%);
   } 
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center2 {
+    /* text-align: center can also sometimes work on images */
+text-align: center;
+justify-content: center;
+align-items: center;
+    
+}
 
 
 
