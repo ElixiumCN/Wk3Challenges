@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="drumkit.css">    
+    <title>Document</title>
+</head>
+<body>
+
+    <audio id="audio" controls style="display:none">
+        <source src="sounds/boom.wav" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+    <audio id="audio2" controls style="display:none">
+        <source src="sounds/clap.wav" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+<br>
+
+<!-- <button onclick="audio.play()">Click</button> -->
+
+<!-- As soon as I add the commented out text div, the hover effect on the image no longer works? -->
+<!-- so the text is covering the button, the text will have to be the button -->
+
+
+<div class="row">
+<div class="flexLocationImages wrapper selectZoom">
+    <img src="images/d01.jpg">
+    <!-- <input type="image" src="images/d01.jpg" class=""> -->
+    <div class="text">
+        <!-- <button onclick="audio.play()">Click</button> -->
+        <button class="button-85" role="button" onclick="audio.play()">A: Boom</button>
+
+    </div>
+
+</div>
+
+<div class="flexLocationImages">
+    <input type="image" src="images/d02.jpg" class="selectZoom" />
+</div>
+
+<div class="flexLocationImages">
+    <input type="image" src="images/d03.png" class="selectZoom" />
+
+</div>
+</div>
+
+
+<!-- <div class="flexLocationImages">
+<img src="images/d04.jpg" alt="" style="width:100%" class="selectZoom">
+</div> -->
+
+
+
+
+
+
+<br><br><br>
+
+
+<script src="drumkit.js"></script>
+</body>
+</html>
