@@ -13,3 +13,52 @@ document.addEventListener('keydown', function(e) {
       // console.log(e.code);
     }
 });
+
+document.addEventListener('keydown', function(e) {
+  if (e.code == "KeyD") {
+  document.getElementById('audio3').play();
+    // console.log(e.code);
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.code == "KeyF") {
+  document.getElementById('audio4').play();
+    // console.log(e.code);
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.code == "KeyG") {
+  document.getElementById('audio5').play();
+    // console.log(e.code);
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.code == "KeyH") {
+  document.getElementById('audio6').play();
+    // console.log(e.code);
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.code == "KeyJ") {
+  document.getElementById('audio7').play();
+    // console.log(e.code);
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.code == "KeyK") {
+  document.getElementById('audio8').play();
+    // console.log(e.code);
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.code == "KeyL") {
+  document.getElementById('audio9').play();
+    // console.log(e.code);
+  }
+});

@@ -18,14 +18,46 @@
     bottom: 0;
 }
 
-.flexLocationImages {
+.texttwo {
     display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* color: #fff; */
+    position: absolute;
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+}
+
+.container-btn {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+    text-align: center;
+
+  }
+
+.vertical-center-btn {
+    margin: 0;
+    position: absolute;
+    /* top: 50%; */
+    -ms-transform: translateY(-0%);
+    transform: translateY(-0%);
+  }
+
+
+.flexLocationImages {
+    position: relative;
     /* flex: 33%; */
+    height:150px;
+    width:150px;
+
     padding: 10px;
     }
 
     /* target images that have flexLocationImages applied */
-.flexLocationImages img
+.something-img
 {  
     height:150px;
     width:150px;
@@ -35,7 +67,10 @@ input {
     border: 0;
 }
 
-
+.img-three {
+background-image: url("images/d03.png");
+background-size: 150px;
+}
 
 
 .selectZoom {
