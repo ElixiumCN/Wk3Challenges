@@ -5,21 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="1pdice.css">    
-    <title>Document</title>
+    <title>Week 3 - 1 Player Dice Game</title>
 </head>
 <body>
     
-    <!-- <button onclick="myFunction()">Try it</button> -->
-    <div id="myDIV">
-        <img src="dice.png">
-        </div>
+    <p id="diceImageBox"></p>
 
-    <button class="button-85" role="button" onclick="showDice()">Roll Dice</button>
 
-    <!-- visibility of hidden div, its in the slides somewhere -->
-    <!-- don't struggle too much, people will be posting code. -->
+    <!-- <h1>You Rolled</h1> -->
+    <h1>You rolled</h1>
+    <p id="dice1"></p>
+    <p id="status2">-</p>
+
+    <h1>Your score</h1>
+
+    <p id="scoreBox"></p>
+    <p id="winBox"></p>
+    <br>
+
+    <!-- <div id="diceImageBox"></div> -->
+
+<!-- if element roll dice image not exist then create roll dice image -->
+<div>
+    <button class="button-85" id="rollDiceBtn">Roll Dice</button>
+    <button class="button-85" id="resetGameBtn">Restart Game</button>
+    <!-- <button class="button-85" id="resetGameBtn">TestButton</button> -->
+
+
+
+    <!-- <button class="button-85" onclick="showResult();">Test</button> -->
+
+</div>
 
     <script src="1pdice.js"></script>
 
 </body>
 </html>
+
+

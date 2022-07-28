@@ -1,0 +1,110 @@
+<!-- [creative freedom on this, so use gif files for win and loss]
+
+List the things to do again with my new knowledge:
+
+Interface elements required:
+
+- Button for dice roll
+- e.g. P tag for showing score
+- e.g. P tag for showing win or loss text
+
+- as simple as possible at first, just text for win or lose.. no images.
+
+Criteria
+> Roll the dice to begin the game. [x]
+> The dice appears on the first roll. [x]
+> When a dice is rolled, the score adds up. [x]
+> Once the score passes 20, you win. [x]
+> However, if you hit ‘1’ then you lose (if less than score of 20). [x]
+> If the player won or lost, the player can start the game again. [x]
+> You may want to change the score to any number other than 20 [x]
+
+These criteria must be met:
+######> Roll the dice to begin the game. [x]
+A button that calls the diceroll function 
+- Done.
+
+######>> The dice appears on the first roll. [x]
+- Done with 2 seperate methods I know about - hidden div & create element.
+
+######>> When a dice is rolled, the score adds up. [x]
+
+return the dice roll and show as text. 
+set score variable, if score = win then show win text.
+increment score variable with result.
+
+######>> Once the score passes 20, you win. [x]
+
+
+######>> However, if you hit ‘1’ then you lose (if less than score of 20). [x]
+--- replace youLose element with a string "You Lose"
+
+######>> If the player won or lost, the player can start the game again. [x]
+-- if the game ends, create element for start new game element
+
+######>> You may want to change the score to any number other than 20 [x]
+
+
+Bugfixes:
+    - Score now immediately begins counting counting on the first roll,
+    the score addition line of code hasn't high up enough in the dice roll function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    1. List all the things I'll use to produce this e.g. button.
+
+1 Player Game
+
+These criteria must be met:
+##############> Roll the dice to begin the game.
+A button that calls the diceroll function
+
+##############> The dice appears on the first roll.
+the roll function makes a div containing a dice appear []
+
+##############> When a dice is rolled, the score adds up.
+
+score Variable  that is incremented (addition operator) by the result of the dice roll.
+a function that takes the output of the diceroll function and stores it in a score variable and everytime the diceroll function is run, it takes the diceroll output & applies an addition operator to the score variable
+- How to pass the result of a function to a variable.
+
+##############> Once the score passes 20, you win.
+when the score variable exceeds 20 call a win function
+
+##############> However, if you hit ‘1’ then you lose (if less than score of 20).
+if the dice roll results in 1 then call the 
+
+
+##############> If [conditional statement] the player won or lost, the player can start the game again.
+##############> You may want to change the score to any number other than 20
+
+
+
+2 Player Game
+
+These criteria must be met:
+> Click ‘New Game’ to begin.
+> Player 1 goes first. You can roll the dice however many times you
+wish.
+>In the ‘Current’ box, it gives you the current score as you roll the
+dice.
+>When it hits a certain score, player 1 may want to ‘hold’ the
+score, which will then appear in the middle of player 1 as the total
+score so for, player 1 cannot roll anymore. Player 2 begins to roll.
+> If the player hits ‘1’ without holding any score, the current score
+will reset, and the next player begins to roll again.
+> Once one of the players hits 20 or more score, that player wins! -->
