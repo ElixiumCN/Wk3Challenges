@@ -13,29 +13,13 @@ resetGameBtn.addEventListener('click', resetGame)
 
 // Roll Dice [function]
 function rollDice() {
-    createDiceImage(); 
-    // createDiceImage(); further down in the function to make sure the above code runs faster.
+    createDiceImage(); // further down in the function to make sure the above code runs faster.
 // no, further down doesn't make a difference.
     // let dice1 = document.getElementById("dice1");
     let status = document.getElementById("status2");
     let d1 = Math.floor(Math.random() * 6) + 1;
     let diceTotal = d1;
     (d1 === 1) ? score = 0 : score += d1; 
-
-    if(d1 === 1){
-        document.getElementById("diceImageBox").src="01.png";
-    } else if(d1 === 2){
-        document.getElementById("diceImageBox").src="02.png";
-    } else if(d1 === 3){
-        document.getElementById("diceImageBox").src="03.png";
-    } else if(d1 === 4){
-        document.getElementById("diceImageBox").src="04.png";
-    } else if(d1 === 5){
-        document.getElementById("diceImageBox").src="05.png";
-    } else if(d1 === 6){
-        document.getElementById("diceImageBox").src="06.png";
-    }
-
     // dice1.innerHTML = d1;
     status.innerHTML = "You rolled "+diceTotal+".";
         if(d1 == 1) {
@@ -43,8 +27,6 @@ function rollDice() {
                 setTimeout(resetGame, 3000);
                     }
                     // Set score to zero if 1 is rolled otherwise incremenet the score
-
-
 
     // Fill HTML element with the value of the score variable.
     scoreBox.textContent = score
@@ -85,6 +67,3 @@ function resetGame() {
     score = 0; // reset score to 0
     d1 = 0; // reset dice to 0
 }
-
-// Programmatically change the src of an img tag
-// document.getElementById("imageid").src="../template/save.png";
