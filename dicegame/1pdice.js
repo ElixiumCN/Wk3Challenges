@@ -1,3 +1,6 @@
+// Create variables to fix slowdown bug.
+let score = 0;
+
 // Connecting all of the HTML elements needed and storing them in variables
 const resetGameBtn = document.getElementById('resetGameBtn');
 const rollDiceBtn = document.getElementById('rollDiceBtn');
