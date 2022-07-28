@@ -13,7 +13,8 @@ resetGameBtn.addEventListener('click', resetGame)
 
 // Roll Dice [function]
 function rollDice() {
-    createDiceImage();
+    createDiceImage(); // further down in the function to make sure the above code runs faster.
+// no, further down doesn't make a difference.
     // let dice1 = document.getElementById("dice1");
     let status = document.getElementById("status2");
     let d1 = Math.floor(Math.random() * 6) + 1;
@@ -41,19 +42,6 @@ function rollDice() {
 
     }
 
-// Reset Game [function]
-function resetGame() {
-    document.getElementById("diceImageBox").style.visibility = "hidden"; 
-    // above line is REQUIRED to set/read the ID of the dynamically created IMG element.
-    scoreBox.textContent = "";
-    winBox.textContent = "";
-    dice1.textContent = "";
-    status2.textContent = "";
-    score = 0; // reset score to 0
-    d1 = 0; // reset dice to 0
-}
-
-
 // Create Dice Image when the Roll Dice Button is clicked [function]
 
 function createDiceImage() {
@@ -67,3 +55,15 @@ function createDiceImage() {
     // this line is REQUIRED
 // paragraph tag is gone, replaced with an IMG tag.
     }
+
+// Reset Game [function]
+function resetGame() {
+    document.getElementById("diceImageBox").style.visibility = "hidden"; 
+    // above line is REQUIRED to set/read the ID of the dynamically created IMG element.
+    scoreBox.textContent = "";
+    winBox.textContent = "";
+    dice1.textContent = "";
+    status2.textContent = "";
+    score = 0; // reset score to 0
+    d1 = 0; // reset dice to 0
+}
