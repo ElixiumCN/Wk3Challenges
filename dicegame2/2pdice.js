@@ -18,9 +18,15 @@ resetGameBtn.addEventListener('click', resetGame)
 holdBtn.addEventListener('click', switchPlayer)
 holdBtn2.addEventListener('click', switchPlayer2)
 
+let rollsound = new Audio("roll2.wav"); 
+
 // ------------------------------- Player 1 Dice roll
 // Roll Dice [Player 1] [function]
 function rollDice() {
+    // play sound
+    rollsound.pause();
+    rollsound.currentTime = 0;
+    rollsound.play();
     // rollDiceBtn.style.visibility = "visible"; 
     createDiceImage(); 
     // createDiceImage(); further down in the function to make sure the above code runs faster.
@@ -73,6 +79,10 @@ function rollDice() {
     // ------------------------------- Player 2 Dice roll
 // Roll Dice [Player 2] [function]
 function rollDice2() {
+    // play sound
+    rollsound.pause();
+    rollsound.currentTime = 0;
+    rollsound.play();
     // rollDiceBtn.style.visibility = "visible"; 
     createDiceImage(); 
     // createDiceImage(); further down in the function to make sure the above code runs faster.

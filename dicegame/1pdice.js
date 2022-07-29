@@ -14,8 +14,16 @@ const winBox = document.getElementById('winBox');
 rollDiceBtn.addEventListener('click', rollDice)
 resetGameBtn.addEventListener('click', resetGame)
 
+// sound
+let rollsound = new Audio("roll2.wav"); 
+
 // Roll Dice [function]
 function rollDice() {
+    // play sound
+    rollsound.pause();
+    rollsound.currentTime = 0;
+    rollsound.play();
+//    
     createDiceImage(); 
     // createDiceImage(); further down in the function to make sure the above code runs faster.
 // no, further down doesn't make a difference.
