@@ -8,6 +8,11 @@
     <title>Week 3 - 1 Player Dice Game</title>
 </head>
 <body>
+
+    <audio id="audio" controls style="display:none">
+        <source src="roll2.wav" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
     
     <p id="diceImageBox"></p>
 
@@ -27,7 +32,7 @@
 
 <!-- if element roll dice image not exist then create roll dice image -->
 <div>
-    <button class="button-85" id="rollDiceBtn">Roll Dice</button>
+    <button class="button-85" id="rollDiceBtn" onclick="audio.play()">Roll Dice</button>
     <button class="button-85" id="resetGameBtn">Restart Game</button>
     <!-- <button class="button-85" id="resetGameBtn">TestButton</button> -->
 
