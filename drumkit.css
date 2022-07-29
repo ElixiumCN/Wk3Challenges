@@ -73,6 +73,7 @@ background-size: 150px;
 }
 
 
+
 .selectZoom {
     transition: transform .7s ease-in-out;
 }
