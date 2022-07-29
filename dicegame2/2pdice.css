@@ -58,24 +58,19 @@ justify-content: center;
   display:flex;
   flex-direction: column;
   flex: 50%;
-  padding: 5px;
   align-items: center;
   justify-content: center;
-
-
+  padding: 5px;
   background: rgba(0, 0, 0, 0.3);
-
 }
 
 .columnTwo {
   display:flex;
   flex-direction: column;
   flex: 50%;
-  padding: 5px;
   align-items: center;
   justify-content: center;
-  
-
+  padding: 5px;
   background: rgba(255, 0, 0, 0.4);
   border: white;
   border-width: 5px;
@@ -85,36 +80,30 @@ justify-content: center;
   display:flex;
   flex-direction: column;
   flex: 50%;
-  padding: 5px;
   align-items: center;
   justify-content: center;
-  
-
+  padding: 5px;
   background: rgba(0, 0, 0, 0.6);
   border: white;
   border-width: 5px;
 }
 
 .greenFade {
-
   background: rgba(0, 255, 47, 0.3);
   padding: 18px;
 }
 
 .redFade {
-
   background: rgba(255, 0, 21, 0.3);
   padding: 18px;
 }
 
 .yellowFade {
-
   background: rgba(255, 251, 0, 0.5);
   padding: 18px;
 }
 
 .blackBtn {
-
   background: black;
   padding: 18px;
 }
@@ -122,8 +111,6 @@ justify-content: center;
 .smallPadding {
   padding:8px;
 }
-
-
 
 /* CSS */
 .button-85 {

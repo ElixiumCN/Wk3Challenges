@@ -42,9 +42,10 @@ function rollDice() {
     // dice1.innerHTML = d1;
     status.innerHTML = "You rolled "+diceTotal+".";
         if(d1 == 1) {
-            status.innerHTML += "<br />You rolled a 1 You lose!! the game will reset in 2 seconds";
+            status.innerHTML += "<br />You rolled a 1 You lose!!";
+            // status.innerHTML += "<br />You rolled a 1 You lose!! the game will reset in 2 seconds";
             rollDiceBtn.style.visibility = "hidden"; 
-                setTimeout(resetGame, 2000);
+                // setTimeout(resetGame, 2000);
                     }
                     // Set score to zero if 1 is rolled otherwise incremenet the score
 
@@ -55,9 +56,10 @@ function rollDice() {
                 
     // Condition for winning game
     if(score >= 20) {
-        winBox.textContent = "You win!! with a score of "+score+". the game will reset in 2 seconds";
+        winBox.textContent = "You win!! with a score of "+score+".";
+        // winBox.textContent = "You win!! with a score of "+score+". the game will reset in 2 seconds";
         rollDiceBtn.style.visibility = "hidden"; 
-        setTimeout(resetGame, 2000);
+        // setTimeout(resetGame, 2000);
         score = 0;
         d1 = 0;
     
@@ -83,6 +85,7 @@ function createDiceImage() {
 function resetGame() {
     document.getElementById("diceImageBox").style.visibility = "hidden"; 
     // above line is REQUIRED to set/read the ID of the dynamically created IMG element.
+    rollDiceBtn.style.visibility = "visible"; 
     scoreBox.textContent = "";
     winBox.textContent = "";
     dice1.textContent = "";
