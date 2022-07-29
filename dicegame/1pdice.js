@@ -42,8 +42,9 @@ function rollDice() {
     // dice1.innerHTML = d1;
     status.innerHTML = "You rolled "+diceTotal+".";
         if(d1 == 1) {
-            status.innerHTML += "<br />You rolled a 1 You lose!! the game will reset in 3 seconds";
-                setTimeout(resetGame, 3000);
+            status.innerHTML += "<br />You rolled a 1 You lose!! the game will reset in 2 seconds";
+            rollDiceBtn.style.visibility = "hidden"; 
+                setTimeout(resetGame, 2000);
                     }
                     // Set score to zero if 1 is rolled otherwise incremenet the score
 
@@ -54,8 +55,9 @@ function rollDice() {
                 
     // Condition for winning game
     if(score >= 20) {
-        winBox.textContent = "You win!! with a score of "+score+". the game will reset in 3 seconds";
-        setTimeout(resetGame, 3000);
+        winBox.textContent = "You win!! with a score of "+score+". the game will reset in 2 seconds";
+        rollDiceBtn.style.visibility = "hidden"; 
+        setTimeout(resetGame, 2000);
         score = 0;
         d1 = 0;
     
